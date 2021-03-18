@@ -1,0 +1,18 @@
+{
+  "id": "file-parser",
+  "name": "CES File Parser",
+  "description": "This plugin splits files into Components based on Spring Boot layer",
+  "version": "0.0.1",
+  "schemaVersion": "1",
+  "icon": "",
+  "commands": [
+    {
+      "id": "file-parser",
+      "name": "CES File Parser",
+      "type": "componentDefiner",
+      "description": "Generates Components and splits files based on Spring Boot layer",
+      "commandTemplate": "file-parser --of ${outputFile} --ftg ${filesToGroup}",
+      "configurationFields": []
+    }
+  ]
+}
