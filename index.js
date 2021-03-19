@@ -11,7 +11,7 @@ const yargs = require("yargs");
 const fs = require('fs');
 
 const options = yargs
-    .usage("Usage: file-parser --of <outputFile> --ftg <filesToGroup>")
+    .usage("Usage: file-parser --of <outputFile> --ftg <filesToGroup> --baseFolder")
     .option("of", {
         alias: "outputFile",
         describe: "Output file to write your results to",
@@ -24,6 +24,12 @@ const options = yargs
         type: "string",
         demandOption: true
     })
+    .option("baseFolder", {
+        alias: "baseFolder",
+        describe: "A file containing the prefix of the path to the analyzed project",
+        type: "string",
+        demandOption: true
+    })
     .argv;
 
 const components = []
@@ -33,11 +39,13 @@ const servicesComponent = new Component("services", [])
 const repositoriesComponent = new Component("repositories", [])
 
 const filesToGroup = options.ftg
+const baseFolder = options.baseFolder
 
 const allFiles = fs.readFileSync(filesToGroup, {encoding: 'UTF-8'}).toString().split("\n").filter(file => file.length !== 0)
 
+
 allFiles.forEach(currentFile => {
-    fs.readFile(currentFile, "UTF-8", function (err, contents) {
+    fs.readFile(baseFolder+currentFile, "UTF-8", function (err, contents) {
         if (contents.includes("@RestController")) {
             controllersComponent.files.push(currentFile)
         } else if (contents.includes("@Service")) {
@@ -59,3 +67,4 @@ components.push(defaultComponent)
 setTimeout(function () {
     fs.writeFileSync(options.of, JSON.stringify(components))
 }, 1000)
+
