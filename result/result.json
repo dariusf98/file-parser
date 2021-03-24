@@ -1,0 +1,99 @@
+[
+  {
+    "fullyQualifiedName": "controllers",
+    "files": [
+      "shop/src/main/java/ro/msg/learning/shop/controllers/CartController.java",
+      "shop/src/main/java/ro/msg/learning/shop/controllers/EmailController.java",
+      "shop/src/main/java/ro/msg/learning/shop/controllers/LocationController.java",
+      "shop/src/main/java/ro/msg/learning/shop/controllers/LogInController.java",
+      "shop/src/main/java/ro/msg/learning/shop/controllers/ProductController.java",
+      "shop/src/main/java/ro/msg/learning/shop/controllers/StockController.java",
+      "shop/src/main/java/ro/msg/learning/shop/controllers/OrderController.java",
+      "shop/src/main/java/ro/msg/learning/shop/controllers/UserController.java"
+    ]
+  },
+  {
+    "fullyQualifiedName": "services",
+    "files": [
+      "shop/src/main/java/ro/msg/learning/shop/services/EmailService.java",
+      "shop/src/main/java/ro/msg/learning/shop/services/CartService.java",
+      "shop/src/main/java/ro/msg/learning/shop/services/LocationService.java",
+      "shop/src/main/java/ro/msg/learning/shop/services/OrderService.java",
+      "shop/src/main/java/ro/msg/learning/shop/services/ProductService.java",
+      "shop/src/main/java/ro/msg/learning/shop/services/RolesService.java",
+      "shop/src/main/java/ro/msg/learning/shop/services/StockService.java",
+      "shop/src/main/java/ro/msg/learning/shop/services/UserService.java"
+    ]
+  },
+  {
+    "fullyQualifiedName": "repositories",
+    "files": [
+      "shop/src/main/java/ro/msg/learning/shop/repositories/AddressRepository.java",
+      "shop/src/main/java/ro/msg/learning/shop/repositories/CartRepository.java",
+      "shop/src/main/java/ro/msg/learning/shop/repositories/OrderRepository.java",
+      "shop/src/main/java/ro/msg/learning/shop/repositories/LocationRepository.java",
+      "shop/src/main/java/ro/msg/learning/shop/repositories/OrderDetailRepository.java",
+      "shop/src/main/java/ro/msg/learning/shop/repositories/ProductCategoryRepository.java",
+      "shop/src/main/java/ro/msg/learning/shop/repositories/ProductRepository.java",
+      "shop/src/main/java/ro/msg/learning/shop/repositories/RolesRepository.java",
+      "shop/src/main/java/ro/msg/learning/shop/repositories/StockRepository.java",
+      "shop/src/main/java/ro/msg/learning/shop/repositories/UserRepository.java"
+    ]
+  },
+  {
+    "fullyQualifiedName": "@",
+    "files": [
+      "LICENSE",
+      "README.md",
+      "shop/pom.xml",
+      "shop/src/main/java/ro/msg/learning/shop/configuration/DeliveryStrategyConfiguration.java",
+      "shop/.gitignore",
+      "shop/src/main/java/ro/msg/learning/shop/dtos/AddressDTO.java",
+      "shop/src/main/java/ro/msg/learning/shop/dtos/CartDTO.java",
+      "shop/src/main/java/ro/msg/learning/shop/dtos/EmailDTO.java",
+      "shop/src/main/java/ro/msg/learning/shop/dtos/LogInDTO.java",
+      "shop/src/main/java/ro/msg/learning/shop/dtos/LocationDTO.java",
+      "shop/src/main/java/ro/msg/learning/shop/dtos/OrderDetailDTO.java",
+      "shop/src/main/java/ro/msg/learning/shop/dtos/ProductDTO.java",
+      "shop/src/main/java/ro/msg/learning/shop/dtos/OrderDTO.java",
+      "shop/src/main/java/ro/msg/learning/shop/dtos/RoleDTO.java",
+      "shop/src/main/java/ro/msg/learning/shop/dtos/StockDTO.java",
+      "shop/src/main/java/ro/msg/learning/shop/dtos/UserDTO.java",
+      "shop/src/main/java/ro/msg/learning/shop/entities/Cart.java",
+      "shop/src/main/java/ro/msg/learning/shop/entities/Address.java",
+      "shop/src/main/java/ro/msg/learning/shop/entities/Location.java",
+      "shop/src/main/java/ro/msg/learning/shop/entities/Order.java",
+      "shop/src/main/java/ro/msg/learning/shop/entities/Product.java",
+      "shop/src/main/java/ro/msg/learning/shop/entities/OrderDetail.java",
+      "shop/src/main/java/ro/msg/learning/shop/entities/Revenue.java",
+      "shop/src/main/java/ro/msg/learning/shop/entities/ProductCategory.java",
+      "shop/src/main/java/ro/msg/learning/shop/entities/Stock.java",
+      "shop/src/main/java/ro/msg/learning/shop/entities/Roles.java",
+      "shop/src/main/java/ro/msg/learning/shop/entities/User.java",
+      "shop/src/main/java/ro/msg/learning/shop/exceptions/LocationNotFoundException.java",
+      "shop/src/main/java/ro/msg/learning/shop/exceptions/OrderNotFoundException.java",
+      "shop/src/main/java/ro/msg/learning/shop/exceptions/ProductNotFoundException.java",
+      "shop/src/main/java/ro/msg/learning/shop/exceptions/ProductsNotAvailableException.java",
+      "shop/src/main/java/ro/msg/learning/shop/exceptions/StockNotFoundException.java",
+      "shop/src/main/java/ro/msg/learning/shop/exceptions/UserNotFoundException.java",
+      "shop/src/main/java/ro/msg/learning/shop/mappers/CartMapper.java",
+      "shop/src/main/java/ro/msg/learning/shop/mappers/LocationMapper.java",
+      "shop/src/main/java/ro/msg/learning/shop/mappers/AddressMapper.java",
+      "shop/src/main/java/ro/msg/learning/shop/mappers/LogInMapper.java",
+      "shop/src/main/java/ro/msg/learning/shop/mappers/OrderDetailMapper.java",
+      "shop/src/main/java/ro/msg/learning/shop/mappers/OrderMapper.java",
+      "shop/src/main/java/ro/msg/learning/shop/mappers/ProductMapper.java",
+      "shop/src/main/java/ro/msg/learning/shop/mappers/RoleMapper.java",
+      "shop/src/main/java/ro/msg/learning/shop/mappers/StockMapper.java",
+      "shop/src/main/java/ro/msg/learning/shop/mappers/UserMapper.java",
+      "shop/src/main/java/ro/msg/learning/shop/schedulers/EmailSendingScheduler.java",
+      "shop/src/main/java/ro/msg/learning/shop/strategies/DeliveryStrategyInterface.java",
+      "shop/src/main/java/ro/msg/learning/shop/ShopBenceApplication.java",
+      "shop/src/main/java/ro/msg/learning/shop/strategies/MostAbundantStrategy.java",
+      "shop/src/main/java/ro/msg/learning/shop/strategies/SingleLocationStrategy.java",
+      "shop/src/main/java/ro/msg/learning/shop/strategies/StrategyEnum.java",
+      "shop/src/main/resources/banner.txt",
+      "shop/src/main/resources/application.properties"
+    ]
+  }
+]
