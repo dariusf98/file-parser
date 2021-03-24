@@ -14,4 +14,4 @@ EXPOSE 8080
 
 ENTRYPOINT  ["node", "index.js"]
 
-CMD ["--baseFolder","C:\\Users\\hachb\\Desktop\\online-shop-bencehSpring-develop\\"]
+CMD ["--baseFolder","online-shop-bencehSpring-develop/"]

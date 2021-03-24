@@ -11,7 +11,7 @@
       "name": "CES File Parser",
       "type": "componentDefiner",
       "description": "Generates Components and splits files based on Spring Boot layer",
-      "commandTemplate": "file-parser --of ${outputFile} --ftg ${filesToGroup} --baseFolder C:/Users/Darius/Desktop/online-shop-bencehSpring-develop/",
+      "commandTemplate": "node index.js --baseFolder online-shop-bencehSpring-develop/",
       "configurationFields": []
     }
   ]
