@@ -5,13 +5,16 @@ Spring File Parser is a Spring application that splits the files of a project ba
 ## Installation
 
 ### From Github
-To install Insider from Github, please download from the [latest release](https://github.com/dxworks/insider/releases) from Github, the `insider.zip` archive and unzip it to a specific location.
+To install Spring File Parser from Github, please download from the [latest release](https://github.com/dariusf98/file-parser/releases) from Github, the `Source code.zip` archive and unzip it to a specific location.
 The contents of this archive are:
-* `insider-*.jar` - the executable jar file
+* `input` folder - the folder containing filesToGroup.txt
+* `project` folder - the folder containing the root folder of the project you want to analyze
+* `result` folder - a folder where Spring File Paser will output the results in, under a result.json file
 * `filesToGroup.txt` - a text file containing the paths to the folders to be grouped in collections
-* `insider.sh` - a shell script for executing insider on Windows
-* `config` - a folder for configuration files, described more in the [Configuration Section](#Configuration)
-* `results` - a folder where Insider will output the results.
+* `Dockerfile` - the file containing the Docker configuration
+* `index.js` - the file containing the main source code of the Spring File Parser
+* `plugin-info.json` - the file containing the configuration for DxPlatform
+* `deploy.sh` -  a shell script for copying **plugin-info.json** to the **.dxplatform** folder on Windows
 
 ### From Docker
 Run Docker on your machine, and open a terminal.
