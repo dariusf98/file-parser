@@ -17,19 +17,20 @@ The contents of this archive are:
 ...
 
 ### From Code
-Clone the repository from [here](https://github.com/dxworks/insider).
+Clone the repository from [here](https://github.com/dariusf98/file-parser/tree/master).
 
-Run `gradle clean build` to obtain an executable jar.
+Run `npm i -g` to obtain a clean installation.
 
 ## Configuration
+After you decide which project you wish to analyze, copy it's root folder to File Parser's **project** folder.
 Edit the configuration file (*config/insider-conf.properties*), to **specify the root folder** of the project's sources.
 
 ## Commands
 
 ### Find Command
-* In order to find the occurrences of the libraries in the analyzed project. Use the following command (run Insider using the **insider.bat** or **insider.sh** script):
+* In order to parse the files contained in a project, use the following command :
 ```
-insider.sh find config/libraries.json
+node index.js --baseFolder {*Your Project Folder Name*}\
 ```
 
 * Detect Simple Code Smells. Use the following command (run Insider using the **insider.bat** or **insider.sh** script):
