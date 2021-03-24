@@ -40,7 +40,13 @@ E.g.
 docker run -v %cd%:/app/input -v %cd%/result:/app/result -v %cd%/project:/app/project -it *IMAGE_ID* --baseFolder online-shop-bencehSpring-develop/
 ```
 
-**IMAGE_ID** is the Id of the image copied from before, and all the * represent placeholders.
+**IMAGE_ID** is the Id of the image copied from before, and all the * represent placeholders, so they should not be inlcluded.
+
+For MAC Users, the command is:
+```
+docker run -v $PWD:/app/input -v $PWD/result:/app/result -v $PWD/project:/app/project -it *IMAGE_ID* --baseFolder {*Your Project Folder Name from the **project** folder*}
+```
+
 ### From Code
 Clone the repository from [here](https://github.com/dariusf98/file-parser/tree/master2) (Branch **master2**).
 
