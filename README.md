@@ -24,35 +24,39 @@ After this, run
 docker image ls
 ```
 and search for the **REPOSITORY** bencehach/website with the associated **TAG 1.0** and copy the **IMAGE ID** (you will need it later). 
-Create a folder on your desktop (e.g. Spring_FP) then navigate inside it. You will need to create two folders here, named **project** and **result**, and a text file named **filesToGroup.txt** (named exactly like this)
+Create a folder on your desktop (e.g. Spring_FP) then navigate inside it. You will need to create two folders here, named **project** and **result**, and a text file named **filesToGroup.txt** (named exactly like this).
+
+Inside the **project** folder you need to copy **the root folder** of the project you wish to analyze.
+For example, if you download a branch as a .zip from GitHub, the unzipped folder has to be copied here.
+Inside the **result** folder a result.json file will be generated, containing the output results.
+In the **filesToGroup.txt** file you will need to provide the paths to the files you wish to group (starting after the path of the root folder of the project, placed in the **project** folder).
+
+From the terminal, navigate inside the newly created folder on the Desktop (e.g. Spring_FP) and run the following command
+```
+docker run -v %cd%:/app/input -v %cd%/result:/app/result -v %cd%/project:/app/project -it 60527230cf45 --baseFolder {*Your Project Folder Name from the **project** folder*}
+```
+E.g.
+```
+docker run -v %cd%:/app/input -v %cd%/result:/app/result -v %cd%/project:/app/project -it 60527230cf45 --baseFolder online-shop-bencehSpring-develop/
+```
+
 ### From Code
 Clone the repository from [here](https://github.com/dariusf98/file-parser/tree/master).
 
-Run `npm i -g` to obtain a clean installation.
+Run `npm i -g`.
 
 ## Configuration
 After you decide which project you wish to analyze, copy it's root folder to File Parser's **project** folder.
-Edit the configuration file (*config/insider-conf.properties*), to **specify the root folder** of the project's sources.
+
+In the **filesToGroup.txt** file you will need to provide the paths to the files you wish to group (starting after the path of the root folder of the project, placed in the **project** folder).
 
 ## Commands
 
-### Find Command
+### Run Command
 * In order to parse the files contained in a project, use the following command :
 ```
 node index.js --baseFolder {*Your Project Folder Name*}\
 ```
-
-* Detect Simple Code Smells. Use the following command (run Insider using the **insider.bat** or **insider.sh** script):
-```
-insider.sh find config/code_smells.json
-```
-
-* You can also run the *find* command with both files at once: 
-```
-insider.sh find config/libraries.json config/code_smells.json
-```
-
-The commands will generate two *.json* files (**_PROJECT_ID-libraries.json_** and **_PROJECT_ID-code_smells.json_**) in the **results** folder.
 
 ## Acknowledgements
 
