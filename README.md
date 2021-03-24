@@ -45,18 +45,15 @@ Clone the repository from [here](https://github.com/dariusf98/file-parser/tree/m
 
 Run `npm i -g`.
 
-## Configuration
-After you decide which project you wish to analyze, copy it's root folder to File Parser's **project** folder.
-
-In the **filesToGroup.txt** file you will need to provide the paths to the files you wish to group (starting after the path of the root folder of the project, placed in the **project** folder).
-
-## Commands
-
-### Run Command
 * In order to parse the files contained in a project, use the following command :
 ```
 node index.js --baseFolder {*Your Project Folder Name*}\
 ```
+
+## Configuration
+After you decide which project you wish to analyze, copy it's root folder to File Parser's **project** folder.
+
+In the **filesToGroup.txt** file you will need to provide the paths to the files you wish to group (starting after the path of the root folder of the project, placed in the **project** folder).
 
 ## Acknowledgements
 
