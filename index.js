@@ -29,14 +29,14 @@ const controllersComponent = new Component("controllers", [])
 const servicesComponent = new Component("services", [])
 const repositoriesComponent = new Component("repositories", [])
 const baseFolder = options.baseFolder
+const baseFolder2 = './project/'.concat(baseFolder);
 
 const allFiles = fs.readFileSync(path.resolve(__dirname, "./input/filesToGroup.txt"), {encoding: 'UTF-8'}).toString().split("\n").filter(file => file.length !== 0)
 
 allFiles.forEach(currentFile => {
 
-    fs.readFile(baseFolder.concat(currentFile.slice(0,-1)), "UTF-8", function (err, contents) {
+    fs.readFile(baseFolder2.concat(currentFile.slice(0,-1)), "UTF-8", function (err, contents) {
         if(contents!= undefined){
-            console.log(contents)
         if (contents.includes("@RestController")) {
             controllersComponent.files.push(currentFile.slice(0,-1))
         } else if (contents.includes("@Service")) {
@@ -51,7 +51,6 @@ allFiles.forEach(currentFile => {
 })
 
 components.push(controllersComponent)
-console.log(controllersComponent)
 components.push(servicesComponent)
 components.push(repositoriesComponent)
 components.push(defaultComponent)
