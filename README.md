@@ -41,7 +41,7 @@ docker run -v %cd%:/app/input -v %cd%/result:/app/result -v %cd%/project:/app/pr
 ```
 
 ### From Code
-Clone the repository from [here](https://github.com/dariusf98/file-parser/tree/master2).
+Clone the repository from [here](https://github.com/dariusf98/file-parser/tree/master2) (Branch **master2**).
 
 Run `npm i -g`.
 
