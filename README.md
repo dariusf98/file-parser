@@ -33,12 +33,13 @@ In the **filesToGroup.txt** file you will need to provide the paths to the files
 
 From the terminal, navigate inside the newly created folder on the Desktop (e.g. Spring_FP) and run the following command
 ```
-docker run -v %cd%:/app/input -v %cd%/result:/app/result -v %cd%/project:/app/project -it 60527230cf45 --baseFolder {*Your Project Folder Name from the **project** folder*}
+docker run -v %cd%:/app/input -v %cd%/result:/app/result -v %cd%/project:/app/project -it *IMAGE_ID* --baseFolder *Your Project Folder Name from the **project** folder*
 ```
 E.g.
 ```
-docker run -v %cd%:/app/input -v %cd%/result:/app/result -v %cd%/project:/app/project -it 60527230cf45 --baseFolder online-shop-bencehSpring-develop/
+docker run -v %cd%:/app/input -v %cd%/result:/app/result -v %cd%/project:/app/project -it *IMAGE_ID* --baseFolder online-shop-bencehSpring-develop/
 ```
+IMAGE_ID is the one copied before, and the * indicate placeholders, so they should not be included in the actual command.
 
 ### From Code
 Clone the repository from [here](https://github.com/dariusf98/file-parser/tree/master2) (Branch **master2**).
@@ -51,5 +52,5 @@ Run `npm i -g`.
 
 * In order to parse the files contained in a project, use the following command :
 ```
-node index.js --baseFolder {*Your Project Folder Name*}\
+node index.js --baseFolder *Your Project Folder Name*\
 ```
