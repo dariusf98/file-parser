@@ -43,19 +43,13 @@ docker run -v %cd%:/app/input -v %cd%/result:/app/result -v %cd%/project:/app/pr
 ### From Code
 Clone the repository from [here](https://github.com/dariusf98/file-parser/tree/master2) (Branch **master2**).
 
+After you decide which project you wish to analyze, copy it's root folder to File Parser's **project** folder.
+
+In the **filesToGroup.txt** file you will need to provide the paths to the files you wish to group (starting after the path of the root folder of the project, placed in the **project** folder).
+
 Run `npm i -g`.
 
 * In order to parse the files contained in a project, use the following command :
 ```
 node index.js --baseFolder {*Your Project Folder Name*}\
 ```
-
-## Configuration
-After you decide which project you wish to analyze, copy it's root folder to File Parser's **project** folder.
-
-In the **filesToGroup.txt** file you will need to provide the paths to the files you wish to group (starting after the path of the root folder of the project, placed in the **project** folder).
-
-## Acknowledgements
-
-The `inspect` command is inspired by the [Application Inspector](https://github.com/microsoft/ApplicationInspector) project created by Microsoft.
-Insider even uses the same input files as Application Inspector.
