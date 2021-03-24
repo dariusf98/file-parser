@@ -40,7 +40,7 @@ E.g.
 docker run -v %cd%:/app/input -v %cd%/result:/app/result -v %cd%/project:/app/project -it *IMAGE_ID* --baseFolder online-shop-bencehSpring-develop/
 ```
 
-**IMAGE_ID** is the Id of the image copied from before, and all the * represent placeholders, so they should not be inlcluded.
+**IMAGE_ID** is the Id of the image copied from before, and all the * represent placeholders, so they should not be included.
 
 For MAC Users, the command is:
 ```
