@@ -8,14 +8,23 @@ Spring File Parser is a Spring application that splits the files of a project ba
 To install Insider from Github, please download from the [latest release](https://github.com/dxworks/insider/releases) from Github, the `insider.zip` archive and unzip it to a specific location.
 The contents of this archive are:
 * `insider-*.jar` - the executable jar file
-* `insider.bat` - a batch script for executing Insider on Windows
+* `filesToGroup.txt` - a text file containing the paths to the folders to be grouped in collections
 * `insider.sh` - a shell script for executing insider on Windows
 * `config` - a folder for configuration files, described more in the [Configuration Section](#Configuration)
 * `results` - a folder where Insider will output the results.
 
 ### From Docker
-...
-
+Run Docker on your machine, and open a terminal.
+To run File Parser from Docker, go [here](https://hub.docker.com/r/bencehach/website) and run the Docker Pull command in the terminal:
+```
+docker pull bencehach/website:1.0
+```
+After this, run
+```
+docker image ls
+```
+and search for the **REPOSITORY** bencehach/website with the associated **TAG 1.0** and copy the **IMAGE ID** (you will need it later). 
+Create a folder on your desktop (e.g. Spring_FP) then navigate inside it. You will need to create two folders here, named **project** and **result**, and a text file named **filesToGroup.txt** (named exactly like this)
 ### From Code
 Clone the repository from [here](https://github.com/dariusf98/file-parser/tree/master).
 
